@@ -1,17 +1,27 @@
-body {
-  background-color: #000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 93vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/bbf420d6-9b72-4487-9abb-bc6db03c803e/ME-en-20211026-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+      no-repeat;
+  background-size: 100%;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 45px;
+  padding: 23px 57px;
 }
 
 nav img {
   height: 45px;
-  padding: 10px 0 0 3.5px;
+  margin-top: 5px;
 }
 
 nav .buttonContainer {
@@ -25,7 +35,7 @@ nav div div {
 }
 
 nav select {
-  background-color: #000;
+  background: none;
   color: #fff;
   border: none;
   outline: none;
