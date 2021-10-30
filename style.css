@@ -10,7 +10,7 @@ body {
 
 header {
   height: 93vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/bbf420d6-9b72-4487-9abb-bc6db03c803e/ME-en-20211026-popsignuptwoweeks-perspective_alpha_website_large.jpg")
       no-repeat;
   background-size: 100%;
@@ -123,6 +123,20 @@ nav button {
 
 .intro button:hover {
   background-color: #f80915;
+}
+
+.intro p {
+  color: #fea025;
+  padding-top: 10px;
+  margin-right: auto;
+  width: 56%;
+  display: none;
+}
+
+.underline {
+  width: 100%;
+  height: 8px;
+  background-color: #222222;
 }
 
 .pol {
