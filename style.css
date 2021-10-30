@@ -78,6 +78,7 @@ nav button {
   align-items: center;
   height: 65%;
   text-align: center;
+  padding-top: 95px;
 }
 
 .intro h1 {
@@ -88,12 +89,40 @@ nav button {
 .intro h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 25px 0 30px 0;
+  padding: 20px 0;
 }
 
 .intro h4 {
   font-size: 1.3rem;
   font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.intro form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.intro input {
+  font-size: 1rem;
+  padding: 25px 10px;
+  width: 35%;
+  outline: none;
+}
+
+.intro button {
+  font-size: 2rem;
+  padding: 18px 40px;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.intro button:hover {
+  background-color: #f80915;
 }
 
 .pol {
