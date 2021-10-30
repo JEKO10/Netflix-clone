@@ -1,3 +1,57 @@
 body {
   background-color: #000;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 45px;
+}
+
+nav img {
+  height: 45px;
+  padding: 10px 0 0 3.5px;
+}
+
+nav .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div div {
+  border: 1px solid rgb(165, 165, 165);
+}
+
+nav select {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 6px 3px 6px 0;
+  margin-right: 5px;
+}
+
+nav select option {
+  background-color: #808080;
+  border: none;
+}
+
+nav i {
+  color: #fff;
+  padding-left: 6px;
+  font-size: 13px;
+  margin-right: -5px;
+}
+
+nav button {
+  background-color: #e50c14;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
