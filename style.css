@@ -38,7 +38,7 @@ nav .buttonContainer {
 }
 
 nav div div {
-  border: 1px solid rgb(165, 165, 165);
+  border: 1px solid #a5a5a5;
 }
 
 nav select {
@@ -194,4 +194,52 @@ nav button {
 }
 
 .download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+
+#phoneImg {
+  height: 350px;
+}
+
+.stranger {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #6b6b6b;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: -8rem;
+  position: relative;
+}
+
+.stranger div:first-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stranger img {
+  height: 5rem;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+.stranger h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.stranger h4 {
+  color: #0071eb;
+  font-weight: 200;
+}
+
+#gif {
+  height: 3rem;
+  margin: 0;
 }
