@@ -303,19 +303,40 @@ nav button {
   text-align: center;
 }
 
-.questions h1 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-}
-
-.questions div {
+.questions > div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 60%;
   margin: 0.5rem auto;
   background-color: #333;
+  /* padding: 25px 30px; */
+}
+
+.questions div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 25px 30px;
+  border: 1px solid black;
+}
+
+.questions p {
+  text-align: start;
+  line-height: 35px;
+  font-size: 1.8rem;
+  padding: 15px 30px 20px 30px; /*top right bottom left*/
+}
+
+.questions p:last-child {
+  padding: 15px 30px 30px 30px; /*top right bottom left*/
+}
+
+.questions h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .questions h2 {
@@ -332,6 +353,7 @@ nav button {
   cursor: pointer;
 }
 
-.questions #cross {
+.questions #cross,
+.questions p {
   display: none;
 }
