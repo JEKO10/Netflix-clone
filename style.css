@@ -327,11 +327,7 @@ nav button {
   text-align: start;
   line-height: 35px;
   font-size: 1.8rem;
-  padding: 15px 30px 20px 30px; /*top right bottom left*/
-}
-
-.questions p:last-child {
-  padding: 15px 30px 30px 30px; /*top right bottom left*/
+  padding: 25px 30px 20px 30px; /*top right bottom left*/
 }
 
 .questions h1 {
@@ -353,7 +349,6 @@ nav button {
   cursor: pointer;
 }
 
-.questions #cross,
 .questions p {
   display: none;
 }
