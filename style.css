@@ -155,12 +155,14 @@ nav button {
   align-items: flex-start;
 }
 
-.tv h1 {
+.tv h1,
+.everywhere h1 {
   font-size: 3rem;
   padding-bottom: 20px;
 }
 
-.tv h2 {
+.tv h2,
+.everywhere h2 {
   max-width: 500px;
   font-weight: 500;
 }
@@ -256,6 +258,13 @@ nav button {
   font-size: 1.5rem;
   max-width: 500px;
   font-weight: 500;
+}
+
+.everywhere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .videoInit::after {
