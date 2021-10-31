@@ -299,11 +299,39 @@ nav button {
 }
 
 .questions {
-  padding: 70px 0;
+  padding: 70px 45px;
   text-align: center;
 }
 
 .questions h1 {
   font-size: 3rem;
   margin-bottom: 3rem;
+}
+
+.questions div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0.5rem auto;
+  background-color: #333;
+  padding: 25px 30px;
+}
+
+.questions h2 {
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+
+.questions #plus {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.questions #cross {
+  display: none;
 }
