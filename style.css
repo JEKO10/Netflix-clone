@@ -163,8 +163,10 @@ nav button {
 
 .tv h2,
 .everywhere h2 {
+  font-size: 1.6rem;
   max-width: 500px;
   font-weight: 500;
+  line-height: 35px;
 }
 
 .videoIn,
@@ -248,16 +250,19 @@ nav button {
   margin: 0;
 }
 
-.download h1 {
+.download h1,
+.kids h1 {
   font-size: 3rem;
   padding-bottom: 20px;
   max-width: 550px;
 }
 
-.download h2 {
-  font-size: 1.5rem;
+.download h2,
+.kids h2 {
+  font-size: 1.6rem;
   max-width: 500px;
   font-weight: 500;
+  line-height: 30px;
 }
 
 .everywhere {
@@ -279,4 +284,16 @@ nav button {
   width: 400px;
   height: 270px;
   z-index: 1;
+}
+
+.kids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.kids img {
+  height: 400px;
+  padding-right: 40px;
 }
