@@ -297,3 +297,13 @@ nav button {
   height: 400px;
   padding-right: 40px;
 }
+
+.questions {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.questions h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
