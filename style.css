@@ -379,3 +379,11 @@ nav button {
   font-weight: 100;
   cursor: pointer;
 }
+
+footer {
+  padding: 70px 45px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #434c53;
+  font-weight: 100;
+}
