@@ -1,6 +1,9 @@
 const input = document.querySelector("#input");
+const inputSecond = document.querySelector("#inputSecond");
 const submit = document.querySelector("#submit");
+const submitSecond = document.querySelector("#submitSecond");
 const inputError = document.querySelector("#inputError");
+const inputErrorSecond = document.querySelector("#inputErrorSecond");
 
 const btnFirst = document.querySelector(".btnFirst");
 const btnSecond = document.querySelector(".btnSecond");
@@ -30,6 +33,15 @@ submit.addEventListener("click", (e) => {
     inputError.style.display = "block";
   }
   input.focus();
+});
+
+submitSecond.addEventListener("click", (e) => {
+  e.preventDefault();
+  inputSecond.value = "";
+  if (inputSecond.value === "") {
+    inputErrorSecond.style.display = "block";
+  }
+  inputSecond.focus();
 });
 
 btnFirst.addEventListener("click", () => {

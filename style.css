@@ -94,27 +94,35 @@ nav button {
   padding: 20px 0;
 }
 
-.intro h4 {
+.intro h4,
+.questions h4 {
   font-size: 1.3rem;
   font-weight: 400;
   padding-bottom: 20px;
 }
 
-.intro form {
+.questions h4 {
+  padding-top: 65px;
+}
+
+.intro form,
+.questions form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.intro input {
+#input,
+#inputSecond {
   font-size: 1rem;
   padding: 25px 10px;
   width: 35%;
   outline: none;
 }
 
-.intro button {
+#submit,
+#submitSecond {
   font-size: 2rem;
   padding: 18px 40px;
   border: none;
@@ -123,16 +131,27 @@ nav button {
   cursor: pointer;
 }
 
-.intro button:hover {
+#submit:hover,
+#submitSecond:hover {
   background-color: #f80915;
 }
 
-.intro p {
+#inputError {
   color: #fea025;
   padding-top: 10px;
   margin-right: auto;
   width: 56%;
   display: none;
+}
+
+#inputErrorSecond {
+  color: #fea025;
+  padding-top: 10px;
+  margin-left: auto;
+  width: 79%;
+  display: none;
+  line-height: 0;
+  font-size: 1rem;
 }
 
 .underline {
