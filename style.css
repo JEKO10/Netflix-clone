@@ -384,6 +384,32 @@ footer {
   padding: 70px 45px;
   max-width: 1000px;
   margin: 0 auto;
-  color: #434c53;
+  color: #6a6a6a;
   font-weight: 100;
+}
+
+footer div:first-of-type {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  font-size: 13px;
+  padding: 0 70px;
+}
+
+footer ul:first-of-type {
+  padding: 0;
+}
+
+footer ul li {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
 }
