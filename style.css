@@ -314,7 +314,7 @@ nav button {
   /* padding: 25px 30px; */
 }
 
-.questions div div {
+.questions div div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,11 +323,23 @@ nav button {
   border: 1px solid black;
 }
 
+.answerCont {
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  transition: all 100ms ease;
+}
+
+.open {
+  max-height: 1200px;
+  transition: all 500ms ease;
+}
+
 .questions p {
   text-align: start;
   line-height: 35px;
   font-size: 1.8rem;
-  padding: 25px 30px 20px 30px; /*top right bottom left*/
+  padding: 25px 30px 20px 30px;
 }
 
 .questions h1 {
@@ -347,8 +359,4 @@ nav button {
   color: #fff;
   font-weight: 100;
   cursor: pointer;
-}
-
-.hide {
-  display: none;
 }

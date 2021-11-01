@@ -9,12 +9,12 @@ const btnFourth = document.querySelector(".btnFourth");
 const btnFifth = document.querySelector(".btnFifth");
 const btnSixth = document.querySelector(".btnSixth");
 
-const answerFirst = document.querySelector(".answerFirst");
-const answerSecond = document.querySelector(".answerSecond");
-const answerThird = document.querySelector(".answerThird");
-const answerFourth = document.querySelector(".answerFourth");
-const answerFifth = document.querySelector(".answerFifth");
-const answerSixth = document.querySelector(".answerSixth");
+const answerContainerFirst = document.querySelector("#answerContainerFirst");
+const answerContainerSecond = document.querySelector("#answerContainerSecond");
+const answerContainerThird = document.querySelector("#answerContainerThird");
+const answerContainerFourth = document.querySelector("#answerContainerFourth");
+const answerContainerFifth = document.querySelector("#answerContainerFifth");
+const answerContainerSixth = document.querySelector("#answerContainerSixth");
 
 const plusIconFirst = document.querySelector("#plusIconFirst");
 const plusIconSecond = document.querySelector("#plusIconSecond");
@@ -33,15 +33,15 @@ submit.addEventListener("click", (e) => {
 });
 
 btnFirst.addEventListener("click", () => {
-  answerFirst.classList.toggle("hide");
+  answerContainerFirst.classList.toggle("open");
   plusIconFirst.classList.toggle("fa-times");
 
-  if (!answerFirst.classList.contains("hide")) {
-    answerSecond.classList.add("hide");
-    answerThird.classList.add("hide");
-    answerFourth.classList.add("hide");
-    answerFifth.classList.add("hide");
-    answerSixth.classList.add("hide");
+  if (answerContainerFirst.classList.contains("open")) {
+    answerContainerSecond.classList.remove("open");
+    answerContainerThird.classList.remove("open");
+    answerContainerFourth.classList.remove("open");
+    answerContainerFifth.classList.remove("open");
+    answerContainerSixth.classList.remove("open");
   }
 
   if (plusIconFirst.classList.contains("fa-times")) {
@@ -60,15 +60,15 @@ btnFirst.addEventListener("click", () => {
 });
 
 btnSecond.addEventListener("click", () => {
-  answerSecond.classList.toggle("hide");
+  answerContainerSecond.classList.toggle("open");
   plusIconSecond.classList.toggle("fa-times");
 
-  if (!answerSecond.classList.contains("hide")) {
-    answerFirst.classList.add("hide");
-    answerThird.classList.add("hide");
-    answerFourth.classList.add("hide");
-    answerFifth.classList.add("hide");
-    answerSixth.classList.add("hide");
+  if (answerContainerSecond.classList.contains("open")) {
+    answerContainerFirst.classList.remove("open");
+    answerContainerThird.classList.remove("open");
+    answerContainerFourth.classList.remove("open");
+    answerContainerFifth.classList.remove("open");
+    answerContainerSixth.classList.remove("open");
   }
 
   if (plusIconSecond.classList.contains("fa-times")) {
@@ -87,15 +87,15 @@ btnSecond.addEventListener("click", () => {
 });
 
 btnThird.addEventListener("click", () => {
-  answerThird.classList.toggle("hide");
+  answerContainerThird.classList.toggle("open");
   plusIconThird.classList.toggle("fa-times");
 
-  if (!answerThird.classList.contains("hide")) {
-    answerFirst.classList.add("hide");
-    answerSecond.classList.add("hide");
-    answerFourth.classList.add("hide");
-    answerFifth.classList.add("hide");
-    answerSixth.classList.add("hide");
+  if (answerContainerThird.classList.contains("open")) {
+    answerContainerFirst.classList.remove("open");
+    answerContainerSecond.classList.remove("open");
+    answerContainerFourth.classList.remove("open");
+    answerContainerFifth.classList.remove("open");
+    answerContainerSixth.classList.remove("open");
   }
 
   if (plusIconThird.classList.contains("fa-times")) {
@@ -114,15 +114,15 @@ btnThird.addEventListener("click", () => {
 });
 
 btnFourth.addEventListener("click", () => {
-  answerFourth.classList.toggle("hide");
+  answerContainerFourth.classList.toggle("open");
   plusIconFourth.classList.toggle("fa-times");
 
-  if (!answerFourth.classList.contains("hide")) {
-    answerFirst.classList.add("hide");
-    answerSecond.classList.add("hide");
-    answerThird.classList.add("hide");
-    answerFifth.classList.add("hide");
-    answerSixth.classList.add("hide");
+  if (answerContainerFourth.classList.contains("open")) {
+    answerContainerFirst.classList.remove("open");
+    answerContainerSecond.classList.remove("open");
+    answerContainerThird.classList.remove("open");
+    answerContainerFifth.classList.remove("open");
+    answerContainerSixth.classList.remove("open");
   }
 
   if (plusIconFourth.classList.contains("fa-times")) {
@@ -141,15 +141,15 @@ btnFourth.addEventListener("click", () => {
 });
 
 btnFifth.addEventListener("click", () => {
-  answerFifth.classList.toggle("hide");
+  answerContainerFifth.classList.toggle("open");
   plusIconFifth.classList.toggle("fa-times");
 
-  if (!answerFifth.classList.contains("hide")) {
-    answerFirst.classList.add("hide");
-    answerSecond.classList.add("hide");
-    answerThird.classList.add("hide");
-    answerFourth.classList.add("hide");
-    answerSixth.classList.add("hide");
+  if (answerContainerFifth.classList.contains("open")) {
+    answerContainerFirst.classList.remove("open");
+    answerContainerSecond.classList.remove("open");
+    answerContainerThird.classList.remove("open");
+    answerContainerFourth.classList.remove("open");
+    answerContainerSixth.classList.remove("open");
   }
 
   if (plusIconFifth.classList.contains("fa-times")) {
@@ -168,15 +168,15 @@ btnFifth.addEventListener("click", () => {
 });
 
 btnSixth.addEventListener("click", () => {
-  answerSixth.classList.toggle("hide");
+  answerContainerSixth.classList.toggle("open");
   plusIconSixth.classList.toggle("fa-times");
 
-  if (!answerSixth.classList.contains("hide")) {
-    answerFirst.classList.add("hide");
-    answerSecond.classList.add("hide");
-    answerThird.classList.add("hide");
-    answerFourth.classList.add("hide");
-    answerFifth.classList.add("hide");
+  if (answerContainerSixth.classList.contains("open")) {
+    answerContainerFirst.classList.remove("open");
+    answerContainerSecond.classList.remove("open");
+    answerContainerThird.classList.remove("open");
+    answerContainerFourth.classList.remove("open");
+    answerContainerFifth.classList.remove("open");
   }
 
   if (plusIconSixth.classList.contains("fa-times")) {
