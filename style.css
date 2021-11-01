@@ -41,7 +41,8 @@ nav div div {
   border: 1px solid #a5a5a5;
 }
 
-nav select {
+nav select,
+footer select {
   background: none;
   color: #fff;
   border: none;
@@ -51,9 +52,20 @@ nav select {
   margin-right: 5px;
 }
 
-nav select option {
+footer select {
+  color: #928b84;
+  padding: 15px 0;
+}
+
+nav select option,
+footer select option {
   background-color: #808080;
   border: none;
+}
+
+footer select option {
+  color: #928b84;
+  background-color: #000;
 }
 
 nav i {
@@ -61,6 +73,11 @@ nav i {
   padding-left: 6px;
   font-size: 13px;
   margin-right: -5px;
+}
+
+footer i {
+  color: #928b84;
+  padding: 0 13px;
 }
 
 nav button {
@@ -381,7 +398,7 @@ nav button {
 }
 
 footer {
-  padding: 70px 45px;
+  padding: 70px 45px 35px 45px; /* top right bottom left */
   max-width: 1000px;
   margin: 0 auto;
   color: #6a6a6a;
@@ -412,4 +429,19 @@ footer ul li {
 
 footer ul li:hover {
   text-decoration: underline;
+}
+
+footer div:last-of-type {
+  width: 15%;
+  border-radius: 2px;
+  border: 1px solid #474747;
+}
+
+footer div:last-of-type:hover {
+  border: 1px solid #cfcfcf;
+}
+
+footer h5 {
+  font-weight: 100;
+  padding-top: 20px;
 }
