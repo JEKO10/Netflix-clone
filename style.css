@@ -11,11 +11,11 @@ body {
 }
 
 header {
-  height: 93vh;
+  min-height: 93vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/bbf420d6-9b72-4487-9abb-bc6db03c803e/ME-en-20211026-popsignuptwoweeks-perspective_alpha_website_large.jpg")
       no-repeat;
-  background-size: 100%;
+  background-size: 120%;
   color: #fff;
 }
 
@@ -97,7 +97,7 @@ nav button {
   align-items: center;
   height: 65%;
   text-align: center;
-  padding-top: 95px;
+  margin: 100px 0 70px 0;
 }
 
 .intro h1 {
@@ -134,7 +134,7 @@ nav button {
 #inputSecond {
   font-size: 1rem;
   padding: 25px 10px;
-  width: 35%;
+  width: 500px;
   outline: none;
 }
 
@@ -180,8 +180,11 @@ nav button {
 .tv {
   background-color: #000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 30px 0;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .tv div {
@@ -189,6 +192,10 @@ nav button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+
+.tv div:first-child {
+  margin-left: 40px;
 }
 
 .tv h1,
@@ -205,6 +212,45 @@ nav button {
   line-height: 35px;
 }
 
+.tvVideo {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.tvVideo img,
+.everywhereVideo img {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.tvVideo div,
+.everywhereVideo div {
+  /* position: absolute;
+  top: 65px;
+  left: 70px;
+  height: 250px;
+  width: 390px; */
+  /* height: 80%;
+  width: 80%; */
+  height: 100%;
+  width: 100%;
+}
+
+.tvVideo div video {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 55%;
+  width: 100%;
+  /* height: 100%;
+  width: 100%; */
+}
+
+/* 
 .videoIn,
 .videoInit {
   width: 600px;
@@ -233,7 +279,7 @@ nav button {
   width: 500px;
   height: 270px;
   z-index: 1;
-}
+} */
 
 .download {
   display: flex;
@@ -302,24 +348,35 @@ nav button {
 }
 
 .everywhere {
+  background-color: #000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 30px 0;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.videoInit::after {
-  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png")
-    no-repeat top left transparent;
+.everywhere div:first-child {
+  margin-left: 40px;
 }
 
-.videoInit video {
+.everywhereVideo {
+  height: 100%;
+  width: 48%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.everywhereVideo div video {
   position: absolute;
-  top: 20px;
-  left: 120px;
-  width: 400px;
-  height: 270px;
-  z-index: 1;
+  top: 10%;
+  left: 0;
+  height: 45%;
+  width: 100%;
+  z-index: -1;
 }
 
 .kids {
@@ -344,7 +401,7 @@ nav button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 65%;
   margin: 0.5rem auto;
   background-color: #333;
   /* padding: 25px 30px; */
