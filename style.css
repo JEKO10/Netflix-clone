@@ -670,4 +670,30 @@ footer h5 {
   #inputSecond {
     width: 90%;
   }
+
+  .tv,
+  .everywhere {
+    padding: 50px 0;
+  }
+
+  .tv h1,
+  .everywhere h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  .tv h2,
+  .everywhere h2 {
+    font-size: 1rem;
+    line-height: 20px;
+    max-width: 80%;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .tvVideo,
+  .everywhereVideo {
+    height: 100%;
+    width: 100%;
+  }
 }
