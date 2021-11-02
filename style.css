@@ -602,7 +602,15 @@ footer h5 {
   }
 
   .questions > div {
-    width: 90%;
+    width: 100%;
+  }
+
+  .questions h2 {
+    font-size: 1.25rem;
+  }
+
+  .questions div div:first-child {
+    padding: 15px 25px;
   }
 
   nav img {
@@ -615,5 +623,51 @@ footer h5 {
 
   footer ul {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 23px 20px;
+  }
+
+  nav img {
+    height: 25px;
+  }
+
+  nav button {
+    padding: 4px 5px;
+  }
+
+  nav select {
+    font-size: 0.7rem;
+  }
+
+  nav option {
+    color: #000;
+  }
+
+  .intro {
+    padding: 70px 0;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+    max-width: 450px;
+  }
+
+  .intro h3 {
+    font-size: 1.5rem;
+    max-width: 350px;
+  }
+
+  .intro h4 {
+    font-size: 1.25rem;
+    max-width: 380px;
+  }
+
+  #input,
+  #inputSecond {
+    width: 90%;
   }
 }
