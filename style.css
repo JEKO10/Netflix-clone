@@ -558,6 +558,11 @@ footer h5 {
     width: 70%;
   }
 
+  .kids img {
+    height: 350px;
+    padding-right: 0;
+  }
+
   .intro form,
   .questions form {
     flex-direction: column;
@@ -606,5 +611,9 @@ footer h5 {
 
   nav button {
     margin-left: 1rem;
+  }
+
+  footer ul {
+    padding: 0 20px;
   }
 }
