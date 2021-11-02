@@ -566,7 +566,6 @@ footer h5 {
   .intro form,
   .questions form {
     flex-direction: column;
-    margin-bottom: 5rem;
   }
 
   .questions form {
@@ -661,7 +660,8 @@ footer h5 {
     max-width: 350px;
   }
 
-  .intro h4 {
+  .intro h4,
+  .questions h4 {
     font-size: 1.25rem;
     max-width: 380px;
   }
@@ -672,7 +672,10 @@ footer h5 {
   }
 
   .tv,
-  .everywhere {
+  .everywhere,
+  .download,
+  .kids,
+  .questions {
     padding: 50px 0;
   }
 
@@ -697,11 +700,6 @@ footer h5 {
     width: 100%;
   }
 
-  .download,
-  .kids {
-    padding: 50px 0;
-  }
-
   .download h1 {
     font-size: 1.5rem;
     max-width: 80%;
@@ -716,7 +714,7 @@ footer h5 {
   }
 
   #phoneImg {
-    height: 300px;
+    height: 230px;
   }
 
   .kids h1 {
@@ -729,5 +727,34 @@ footer h5 {
     height: 230px;
     width: 300px;
     margin-top: 1rem;
+  }
+
+  .questions h1 {
+    font-size: 1.5rem;
+  }
+
+  .questions h2 {
+    font-size: 1rem;
+  }
+
+  .questions p {
+    line-height: 25px;
+    font-size: 1rem;
+  }
+
+  .stranger {
+    margin-top: -5rem;
+    width: 70%;
+  }
+
+  .stranger img {
+    height: 3rem;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  #inputError,
+  #inputErrorSecond {
+    padding-top: 20px;
   }
 }
