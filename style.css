@@ -488,7 +488,7 @@ footer ul li:hover {
 }
 
 footer div:last-of-type {
-  width: 15%;
+  width: 150px;
   border-radius: 2px;
   border: 1px solid #474747;
 }
@@ -558,16 +558,23 @@ footer h5 {
     width: 70%;
   }
 
-  .intro form {
+  .intro form,
+  .questions form {
     flex-direction: column;
     margin-bottom: 5rem;
   }
 
-  #input {
+  .questions form {
+    margin-bottom: 0;
+  }
+
+  #input,
+  #inputSecond {
     margin-bottom: 1rem;
   }
 
-  #submit {
+  #submit,
+  #submitSecond {
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 2px;
@@ -578,10 +585,19 @@ footer h5 {
     max-width: 640px;
   }
 
-  .intro h4 {
+  .intro h4,
+  .questions h4 {
     padding-bottom: 10px;
     max-width: 450px;
     margin: 0 auto;
+  }
+
+  .questions h4 {
+    padding-top: 30px;
+  }
+
+  .questions > div {
+    width: 90%;
   }
 
   nav img {
