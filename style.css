@@ -697,7 +697,8 @@ footer h5 {
     width: 100%;
   }
 
-  .download {
+  .download,
+  .kids {
     padding: 50px 0;
   }
 
@@ -707,14 +708,26 @@ footer h5 {
     margin: 0 auto;
   }
 
-  .download h2 {
-    font-size: 1rem;
+  .download h2,
+  .kids h2 {
     max-width: 90%;
     margin: 0 auto;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   #phoneImg {
     height: 300px;
+  }
+
+  .kids h1 {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .kids img {
+    height: 230px;
+    width: 300px;
+    margin-top: 1rem;
   }
 }
