@@ -13,8 +13,7 @@ body {
 header {
   min-height: 93vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/bbf420d6-9b72-4487-9abb-bc6db03c803e/ME-en-20211026-popsignuptwoweeks-perspective_alpha_website_large.jpg")
-      no-repeat;
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/bbf420d6-9b72-4487-9abb-bc6db03c803e/ME-en-20211026-popsignuptwoweeks-perspective_alpha_website_large.jpg");
   background-size: 120%;
   color: #fff;
 }
@@ -97,7 +96,7 @@ nav button {
   align-items: center;
   height: 65%;
   text-align: center;
-  margin: 100px 0 70px 0;
+  padding: 100px 0 70px 0;
 }
 
 .intro h1 {
@@ -508,31 +507,49 @@ footer h5 {
   .everywhere {
     flex-direction: column;
   }
+
   .download,
   .kids {
     flex-direction: column-reverse;
   }
 
-  .tv {
-    padding: 70px 0;
+  .tv,
+  .everywhere,
+  .download,
+  .kids {
+    padding: 70px 45px;
   }
 
-  .tv div {
+  .tv div,
+  .everywhere div,
+  .download div,
+  .kids div {
     align-items: center;
     text-align: center;
   }
 
-  .tv div:first-child {
-    padding: 0 30px;
+  .tv div:first-child,
+  .everywhere div:first-child {
     margin-left: 0;
   }
 
-  .tv h2 {
+  .download h1,
+  .kids h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .tv h2,
+  .everywhere h2,
+  .download h2,
+  .kids h2 {
     font-size: 1.3rem;
     max-width: 100%;
   }
 
-  .tvVideo {
+  .tvVideo,
+  .everywhereVideo {
     height: 20%;
     width: 70%;
   }
