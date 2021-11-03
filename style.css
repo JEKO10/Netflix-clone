@@ -757,4 +757,24 @@ footer h5 {
   #inputErrorSecond {
     padding-top: 20px;
   }
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  footer div:first-of-type {
+    flex-wrap: wrap;
+  }
+
+  footer ul {
+    min-width: 40%;
+  }
+
+  footer ul:nth-child(3) {
+    padding: 20px 0;
+  }
+
+  footer ul:nth-child(4) {
+    padding: 20px;
+  }
 }
