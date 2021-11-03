@@ -445,7 +445,7 @@ nav button {
 }
 
 .questions #plus {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: none;
   border: none;
   color: #fff;
@@ -458,7 +458,7 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   color: #6a6a6a;
-  font-weight: 100;
+  font-weight: 550;
 }
 
 footer div:first-of-type {
@@ -609,7 +609,7 @@ footer h5 {
   }
 
   .questions div div:first-child {
-    padding: 15px 25px;
+    padding: 15px 10px;
   }
 
   nav img {
@@ -663,7 +663,7 @@ footer h5 {
   .intro h4,
   .questions h4 {
     font-size: 1.25rem;
-    max-width: 380px;
+    max-width: 300px;
   }
 
   #input,
@@ -734,12 +734,17 @@ footer h5 {
   }
 
   .questions h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .questions p {
     line-height: 25px;
     font-size: 1rem;
+    padding: 20px;
+  }
+
+  .questions #plus {
+    font-size: 1.5rem;
   }
 
   .stranger {
